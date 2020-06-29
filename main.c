@@ -1,10 +1,13 @@
 #include <stdio.h>
 int main(void)
 {
-	int min,max,sum;
-	printf("最小値 最大値を入力してください");
-    scanf("%d %d",&min,&max);
-    sum = (min+max)*(max-min+1)/2;
-	printf("%d ~ %dの合計は%dです!\n",min,max,sum);
+    int a, count;
+    printf("回数入力");
+    scanf("%d",&count);
+    for ( a = 0; a < count; a++)
+    {
+        printf("%d回目\n",a+1);
+    }
+    
     return 0;
 }
