@@ -1,13 +1,16 @@
 #include <stdio.h>
 int main(void)
 {
-    int a, count;
-    printf("回数入力");
-    scanf("%d",&count);
-    for ( a = 0; a < count; a++)
+    double money = 1;
+    int month = 1;
+
+    while (money<1000000)
     {
-        printf("%d回目\n",a+1);
+        printf("%02dヶ月目 %7.0f円\n",month,money);
+        money *= 2;
+        month += 1;
     }
-    
+    printf("%02dヶ月目に %7.0f円となり、100万を超えます。\n",month,money);
+
     return 0;
 }
