@@ -1,16 +1,23 @@
 #include <stdio.h>
 int main(void)
 {
-    double money = 1;
-    int month = 1;
-
-    while (money<1000000)
+    int array1[] = {5,2,7,1,9,10};
+    int array2[] = {15,12,17,11,19,110};
+    int i;
+    int array2_count = sizeof(array2)/sizeof(array2[0]);
+    for (i=0;i<array2_count;i++)
     {
-        printf("%02dヶ月目 %7.0f円\n",month,money);
-        money *= 2;
-        month += 1;
+        printf("%d回目： %d\n",i+1,array2[i]);
     }
-    printf("%02dヶ月目に %7.0f円となり、100万を超えます。\n",month,money);
-
+    for (i=0;i<array2_count;i++)
+    {
+        array2[i] = array1[i];
+    }
+    printf("\n");
+    for (i=0;i<array2_count;i++)
+    {
+        printf("%d回目： %d\n",i+1,array2[i]);
+    }
     return 0;
 }
+
