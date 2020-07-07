@@ -8,7 +8,6 @@ int main(void){
   fprintf(fp,"2,源静香,90\n");
   fprintf(fp,"3,剛田武,50\n");
   fprintf(fp,"4,骨川スネ夫,70\n");
-  fprintf(fp,"5,出来杉,99\n");
 
   fclose(fp);
   return 0;
